@@ -116,8 +116,8 @@ export async function openMonitoringModal(app, existing = null, onSaved) {
           <div class="form-group">
             <label>First Time?</label>
             <select id="mf-firsttime">
-              <option value="No" ${d.FirstTime === 'No' ? 'selected' : ''}>No</option>
-              <option value="Yes" ${d.FirstTime === 'Yes' ? 'selected' : ''}>Yes</option>
+              <option value="false" ${d.FirstTime === false ? 'selected' : ''}>No</option>
+              <option value="true" ${d.FirstTime === true ? 'selected' : ''}>Yes</option>
             </select>
           </div>
 
