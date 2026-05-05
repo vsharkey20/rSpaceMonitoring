@@ -1,0 +1,17 @@
+{
+  "name": "rspace-tracker",
+  "version": "1.0.0",
+  "description": "rSpace Co-working Client Tracker",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "appwrite": "^17.0.0"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}
