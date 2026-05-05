@@ -116,9 +116,9 @@ export async function openMonitoringModal(app, existing = null, onSaved) {
           <div class="form-group">
             <label>First Time?</label>
             <select id="mf-firsttime">
-              <option value="false" ${d.FirstTime === false ? 'selected' : ''}>No</option>
-              <option value="true" ${d.FirstTime === true ? 'selected' : ''}>Yes</option>
-            </select>
+            <option value="false" ${d.FirstTime === "false" ? "selected" : ""}>No</option>
+            <option value="true" ${d.FirstTime === "true" ? "selected" : ""}>Yes</option>
+          </select>
           </div>
 
           <div class="form-group">
@@ -275,5 +275,7 @@ export async function openMonitoringModal(app, existing = null, onSaved) {
       toast("Error saving: " + e.message, "error");
       btn.disabled = false; btn.textContent = "💾 Save Record";
     }
+
+    const firstTime = document.getElementById("mf-firsttime").value === "true";
   });
 }
